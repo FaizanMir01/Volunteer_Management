@@ -1,0 +1,124 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5733;
+}
+
+.create-event {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-event h1 {
+    font-size: 36px;
+    color: orangered;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px black;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style checkboxes */
+form input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+form label[for="event-type-online"],
+form label[for="event-type-in-person"] {
+    display: inline;
+    vertical-align: middle;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+form button:hover {
+    background-color: #e5451f;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}

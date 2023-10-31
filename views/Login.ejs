@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f991bc26f1.js" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+          <div class="title">
+            <p>Volunteer Management</p>
+          </div>
+            <div class="logo">
+                <img src="../styles/images/pngwing.com.png" alt="logo" class="logo" height="150px">
+            </div>
+<!-- Inside your HTML body -->
+
+<form class="register-form" id="register-form">
+  <input type="email" placeholder="Email" id="register-email"/>
+  <input type="password" placeholder="Password" id="register-password"/>
+  <button type="button" id="register-button">Register</button>
+  <p class="message">Already registered? <a href="#" id="toggle-login">Sign In</a></p>
+</form>
+
+<form class="login-form" id="login-form">
+  <input type="email" placeholder="Email" id="login-email"/>
+  <input type="password" placeholder="Password" id="login-password"/>
+  <button type="button" id="login-button">Login</button>
+  <p class="message">Not registered? <a href="#" id="toggle-register">Create an account</a></p>
+</form>
+
+</div>
+
+</body>
+
+<script>
+$('.message a').click(function(){
+$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+</script>
+<script type="module" src="/public/login.js"></script>
+</html>

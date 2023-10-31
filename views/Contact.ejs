@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../styles/Contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f991bc26f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="../styles//images/pngwing.com.png" alt="logo" height="70px"> </div>
+            <ul>
+                <li><a href="/Home">Home</a></li>
+                <li><a href="event">Create Event</a></li>
+                <li><a href="About">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="form">
+        <div class="container">
+            <div class="info">
+                <div class="head">
+                    <h1>Lets get in Touch</h1>
+                    <p>we are open for any suggestion or just <br> to have a chat</p>
+                </div>
+                <div class="location">
+                    <div class="location_logo">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="locainfo">
+                        Address: 626126 <br> Kare University Tamil Nadu India
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="location_logo">
+                        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="number locainfo">
+                        Phone: + 1235 2355 98
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="location_logo">
+                        <i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="emailus  number locainfo">
+                        Email: volunteerManagement@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="getin">
+                    <p>Get In Touch</p>
+                </div>
+                <form class="formdetails">
+                    <div class="namemail">
+                        <div class="yourname">
+                            <label for="Fullname">Full Name</label> <br>
+                            <input type="text" id="Fullname" placeholder="Name">
+                        </div>
+                        <div class="email">
+                            <label for="emailid">Email Address</label><br>
+                            <input type="email"  id="emailid" placeholder="Email">
+                        </div>  
+                    </div>
+                    <div class="subject">
+                        <label for="subject">Subject</label><br>
+                        <input type="text"  id="subject" placeholder="Subject">
+                    </div>
+                    <div class="message"><br>
+                        <p>Message</p>
+                        <textarea  id="Mess" cols="50" rows="50" placeholder="Message"></textarea>
+                    </div>
+                    <div class="send">
+                        <input type="submit" value="Send Message">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="/public/contact.js"></script>
+</body>
+</html>

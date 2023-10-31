@@ -1,0 +1,203 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.logo{
+    height: 100px;
+    cursor: pointer;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5733;
+}
+.form{
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;align-items: center;
+}
+.container{
+    height: 600px;
+    width: 1100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px 3px rgba(141, 139, 139, 0.3);
+}
+.info{
+    height:100%;
+    width: 35%;
+    background-color:#fc6847
+    ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+.head h1{
+    color: white;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.head p{
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2rem;
+}
+.location {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    gap: 1rem;
+}
+.location_logo{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.location_logo:hover{
+    background-color:#86f08a;
+
+}
+.number{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.locainfo{
+    color: white;
+    font-size: 18px;
+}
+.contact{
+    height:100%;
+    width:65%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.getin p{
+    font-size: 28px;
+    margin-left: 2rem;
+
+}
+.formdetails{
+    height: 50%;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+}
+.namemail{
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type=text]{
+    border: none;
+    width:300px;
+    height: 40px;
+    outline: none;
+    border-bottom: 1px solid rgb(117, 115, 115);
+    margin-left: 2rem ;
+    margin-bottom:1rem ;
+    font-size: 16px;
+}
+input[type=email]{
+    border: none;
+    width:300px;
+    height: 40px;
+    outline: none;
+    border-bottom: 1px solid rgb(117, 115, 115);
+    margin-left: 2rem;
+    font-size: 14px;
+}
+label{
+    margin: 0px 0px 1rem 2rem;
+    font-size: 18px;
+}
+::placeholder {
+    color: rgb(196, 194, 194);
+    opacity: 1;
+}
+input:focus{
+    border-bottom: 1px solid  #01d28e;
+}
+textarea:focus{
+    border-bottom: 1px solid  #01d28e;
+}
+textarea{
+    border: none;
+    resize: none;
+    width:60%;
+    height:100px;
+    outline: none;
+    border-bottom: 1px solid rgb(117, 115, 115);
+    margin-left: 2rem;
+    font-size: 16px;
+}
+.message p{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+.send input{
+    border: none;
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+    background-color:#ff5733    ;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+.send input:hover{
+    background-color: #62d866;
+}
+

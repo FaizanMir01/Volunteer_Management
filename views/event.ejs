@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event - Volunteer Events</title>
+    <link rel="stylesheet" type="text/css" href="../styles/event.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="../styles/pngwing.com.png" alt="logo" height="70px"> </div>
+            <ul>
+                <li><a href="/Home">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="About">About Us</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="create-event">
+        <h1>Create Event</h1>
+        <form action="/event" method="POST" onsubmit="return showSuccessAlert()">
+            <label for="event-title">Event Title:</label>
+            <input type="text" id="event-title" name="event_title" required>
+
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="event_date" required>
+
+            <label for="event-location">Event Location:</label>
+            <input type="text" id="event-location" name="event_location" required>
+
+            <label for="event-description">Event Description:</label>
+            <textarea id="event-description" name="event_description" rows="4" required></textarea>
+
+            <label for="event-organizer">Event Organizer:</label>
+            <input type="text" id="event-organizer" name="event_organizer" required>
+
+            <label for="event-volunteers-needed">Volunteers Needed:</label>
+            <input type="number" id="event-volunteers-needed" name="volunteers_needed" required>
+
+            <button type="submit" class="cta-button">Create Event</button>
+        </form>
+    </section>
+    
+</body>
+
+<script>function showSuccessAlert() {
+    alert("Event created successfully");
+    return true; // Allow the form to submit
+}</script>
+</html>
