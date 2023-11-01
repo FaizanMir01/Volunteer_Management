@@ -5,6 +5,7 @@
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -46,7 +47,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: bold;
     transition: color 0.3s;
@@ -87,7 +88,6 @@ nav a:hover {
     color: white;
     font-weight: 600;
     font-size: 15px;
-    border-radius:7px;
     cursor: pointer;
 }
 #signOut:hover{
@@ -117,17 +117,52 @@ nav a:hover {
     color: #fff;
     text-decoration: none;
     border-radius: 2px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    font-weight: bold;;
+    position: relative;
+    z-index: 1;
 }
-
-.cta-button:hover {
-    background-color: #f32307;
+.cta-button::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color:green ;
+    transition: .3s ease;
+    z-index: -1;
 }
-.jion-btn:hover{
-    background-color: green;
+.cta-button:hover::before{
+    width: 100%;
+}
+.cta-button2 {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;;
+    position: relative;
+    z-index: 1;
+}
+.cta-button2::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color:green ;
+    transition: .3s ease;
+    z-index: -1;
+}
+.cta-button2:hover::before{
+    width: 100%;
 }
 #featured-events {
     max-width: 1200px;
