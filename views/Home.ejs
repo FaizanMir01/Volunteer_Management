@@ -52,7 +52,8 @@
                 <p>Description: <%= event.event_description %></p>
                 <p>Oragniser:<%= event.event_organizer %></p>
                 <p>VolunteerNeeded: <%= event.volunteers_needed %></p>
-                <a href="#" class="cta-button">Join Event</a>
+                <button class="cta-button2">Join Event</button>
+                <span class="counter">0</span>
             </div>
             <% }); %>
         </div>
@@ -60,11 +61,10 @@
     <footer>
         <p>&copy;2023 volunteerManagement</p>
     </footer>
-
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<!-- <script>
+ <script>
     let tl = gsap.timeline();
     tl.from("header",{
         duration:2,
@@ -88,7 +88,7 @@
         ease:"power1.in",
         delay:.5
     })
-</script> -->
+</script>
 <script type="module" src="/public/Home.js"></script>
 
 </html>
