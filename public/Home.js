@@ -1,22 +1,18 @@
-const eventCards = document.querySelector('#featured-events');
+const joinEventButton = document.querySelector('.join-event');
+const joinCountElement = document.querySelector('#jionCount');
 
-// Add click event listener to the parent element
-eventCards.addEventListener('click', function(event) {
-    // Check if a join event button was clicked
-    if (event.target.classList.contains('cta-button2')) {
-        // Show confirm dialog
-        const userConfirmed = confirm('Do you want to join the event?');
+joinEventButton.addEventListener('click', () => {
+  // Display an alert box asking the user if they want to join the event.
+  const confirmAlert = confirm('Are you sure you want to join this event?');
 
-        // If user confirmed, increment counter and update counter element
-        if (userConfirmed) {
-            const counterElement = event.target.nextElementSibling;
-            let counter = Number(counterElement.textContent);
-            counter++;
-            counterElement.textContent = counter;
-        }
-    }
+  // If the user clicks yes, increase the join count.
+  if (confirmAlert) {
+    let joinCount = parseInt(joinCountElement.textContent);
+    joinCount++;
+    joinCountElement.textContent = joinCount;
+  }
 });
-
+/**for logout ***/
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
 
@@ -47,6 +43,8 @@ document.getElementById("signOut").addEventListener("click", function() {
       });
   });
   
+
+
 
 
   
