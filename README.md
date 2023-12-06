@@ -1,21 +1,6 @@
 # Volunteer_Management System
 VolunteerManagement is a web application built with Node.js, Express, EJS, MongoDB, and CSS. It provides a platform for users to create and discover volunteer events, fostering community engagement and social impact. Users can easily create events where they need volunteers and other users can join those events to contribute their time and efforts.
 
-## Table of Contents
-
-- [Demo](#demo)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Demo
-
-- NA
-
 ## Features
 
 - User Authentication: Users can sign up and log in using Firebase Authentication.
