@@ -13,13 +13,5 @@ VolunteerManagement is a web application built with Node.js, Express, EJS, Mongo
 - Firebase: Used for user authentication, real-time database, and hosting.
 - HTML/CSS/JavaScript: The frontend is built using these web technologies.
   Ejs Node js for backend.
-- [Other relevant technologies or frameworks used in your project]
 
-## Getting Started
-
-1. Clone this repository to your local machine:
-
-```bash
-git clone https://github.com/your-username/your-website.git
-```
 
