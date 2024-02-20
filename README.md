@@ -22,14 +22,4 @@ VolunteerManagement is a web application built with Node.js, Express, EJS, Mongo
 ```bash
 git clone https://github.com/your-username/your-website.git
 ```
-### output
-#### Login Page
-<img scr="outputPics/Login.png" alt="login" height="500px" />
-#### Home Page
-<img scr="outputPics/home.png" height="500px" />
-#### Home Page2
-<img scr="outputPics/home2.png" height="500px" />
-#### Event Page
-<img scr="outputPics/createEvent.png" height="500px" />
-#### Contact Page
-<img scr="outputPics/contact.png" height="500px" />
+
