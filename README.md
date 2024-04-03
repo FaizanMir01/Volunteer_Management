@@ -21,6 +21,11 @@ VolunteerManagement is a web application built with Node.js, Express, EJS, Mongo
   ### Home page
   <img src="./outputPics/home.png"/>
   <img src="./outputPics/home2.png"/>
+### Contact page
+<img src="./outputPics/contact.png"/>
+
+### Create Event Page
+<img src="./outputPics/createEvent.png"/>
 
   
   
